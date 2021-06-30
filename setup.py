@@ -269,7 +269,7 @@ if daemon == "yes":
     # enable service
     #
     try:
-        os.system("systemctl enable dnsexit")
+        os.system("rc-update add dnsexit")
     except:
         print(ERR_ENABLE_SERVICE)
         sys.exit(1)
