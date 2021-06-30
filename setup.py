@@ -13,7 +13,7 @@ from datetime import datetime
 import urllib.request
 import re
 
-servicefile = "/lib/systemd/system/dnsexit.service"
+servicefile = "/etc/init.d/dnsexit.service"
 cfile = "/etc/dnsexit.conf"
 proxyservs = "ip.dnsexit.com;ip2.dnsexit.com;ip3.dnsexit.com"
 logfile = "/var/log/dnsexit.log"
