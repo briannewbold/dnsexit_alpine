@@ -1,0 +1,12 @@
+version: '2.1'
+
+services:
+   alpine:
+     container_name: AlpineMinimal
+     image: alpine:latest
+     network_mode: bridge
+     stdin_open: true # docker run -i
+     tty: true        # docker run -t
+     #command: apk --no-cache add curl && curl -O http://downloads.dnsexit.com/ipUpdate-1.71.tar.gz && tar xzvf ipUpdate-1.71.tar.gz && cd dnsexit
+     #command: apk --no-cache add git && apk --no-cache add python3 && apk --no-cache add openrc && git clone https://github.com/jhonnymonclair/dnsexit && cd dnsexit && chmod 755 ipUpdate.py && chmod 755 setup.py
+     #command: apk --no-cache add git && apk --no-cache add python3 && apk --no-cache add openrc && git clone https://github.com/briannewbold/dnsexit_alpine dnsexit && cd dnsexit && chmod 755 ipUpdate.py && chmod 755 setup.py
